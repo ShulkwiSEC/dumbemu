@@ -45,6 +45,16 @@ A lightweight, minimal-dependency PE file emulator built on top of Unicorn Engin
 Install the required dependencies using pip:
 
 ```bash
+pip install dumbemu
+```
+
+## Dirct from GIT
+```bash
+pip install git+https://github.com/Diefunction/dumbemu.git
+```
+
+## OR Manule
+```bash
 git clone https://github.com/Diefunction/dumbemu
 pip install unicorn
 pip install pefile
@@ -173,3 +183,22 @@ DumbEmu(path: str, arch: int = UC_ARCH_X86, mode: int = UC_MODE_64)
 - `write(addr: int, data: bytes) -> None`: Write to emulated memory
 - `string(addr: int, wide: bool = False, max_len: int = MAX_STRING_LEN) -> str`: Read null-terminated string from memory
 
+___
+# Contrubie
+__
+### Codebase:
+```
+dumbemu/
+│
+├── dumbemu/          ← this should be a folder (package) containing your code
+│   ├── __init__.py
+│   ├── DumbEmu.py
+│   ├── CPU.py
+│   ├── Memory.py
+│   ├── PEFile.py
+│   ├── const.py
+│
+├── setup.py
+├── README.md
+└── .gitignore
+```
