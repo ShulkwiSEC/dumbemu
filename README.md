@@ -188,9 +188,8 @@ ___
 __
 ### Codebase:
 ```
-dumbemu/
 │
-├── dumbemu/          ← this should be a folder (package) containing your code
+├── dumbemu/
 │   ├── __init__.py
 │   ├── DumbEmu.py
 │   ├── CPU.py
